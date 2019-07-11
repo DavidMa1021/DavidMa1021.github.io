@@ -1,0 +1,508 @@
+
+body{
+    overflow-x: hidden;
+}
+    
+#portfolio-header{
+    display: block;
+    position: fixed;
+    background-color: rgb(204, 204, 204); 
+    opacity:1;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 2px 1px rgba(0 , 0, 0, 0.08);
+    z-index: 1000;
+}
+#porfolio-nav {
+    position: fixed;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 1;
+}
+#portfolio-nav ul { 
+    align-content: left;
+    font-family: "Helvetica", Arial;
+    font-size: 15px;
+    margin: 5px;
+    margin-left: 30%;
+    padding: 0;
+}
+#portfolio-nav ul li{
+    display: inline-block;
+}
+.portfolio-nav_item{
+    float: right;
+}
+#portfolio-nav ul li a{
+    color: #262626;
+    display: block;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+#portfolio-nav ul li a:hover{    
+    color: rgb(34, 89, 255);          
+}
+#portfolio-nav ul li a:active{    
+    color: rgb(34, 89, 255);          
+}
+#home-module ul.portfolio-nav-options li:nth-child(1) a {
+    color: rgb(34, 89, 255);  
+  }
+
+#main-wrapper{
+    height: 100%;
+    width: 100%; 
+}
+
+/*---------------------------------------------- INICIO ------------------------------------------------------*/
+#home-module{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 720px;
+    width: 100%;
+}
+#home-module-banner{
+    position: absolute;
+    height: 50%;
+    margin: 0px auto;
+    width: 100%;
+    background: url(../images/home/home_banner11.jpg )fixed center no-repeat;
+    background-color: black;     
+    z-index: 0;
+}
+#coverpage-tittle{
+    
+    margin: 50px;
+    width: 25%;
+    height: 50%;
+    padding: 30px 30px;
+    text-align: center;
+}
+#coverpage-tittle h1{
+    font-family: "Helvetica", Arial;
+    font-size: 40px;
+    color: white;
+    width: auto;
+    margin: 0 auto;
+    margin-left: 0;
+}
+#coverpage-tittle h1 pre{
+    text-align: left;
+    font-family: "Helvetica", Arial;
+}
+
+#home-module-banner-profile_picture{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: #87DEDE;
+    margin: 10% auto 0px;
+    background: url(../images/home/profile_image1.jpg );
+    z-index: 1;
+}
+
+#home-module-interests{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 45%;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 0;
+}
+
+.interest-overflow-wrapper{
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    height: 100%; 
+    margin: 0 4%;
+    border-radius: 5px;
+    overflow: hidden;
+    background-image: url(../images/home/interest1_backroung.jpg);
+
+
+}
+.interest-2{
+    background-image: url(../images/home/interest2_background.jpg);
+   
+}
+
+.interest-3{
+    background-image: url(../images/home/interest3_backgrpund.jpg); 
+}
+.interest{
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transform: translateY(115%);
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+    background-color: #353535af;
+    transition: all 0.5s ease-out;
+    z-index: 0;
+}
+.interest-overflow-wrapper:hover .interest{
+    transform: translateY(0%);
+}
+
+.interest-overflow-wrapper:hover .home-interests-image{
+    transform: scale(1.15);
+}
+.interest p{
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 2.5%;
+    color:white;
+    opacity: 1;
+    z-index: 1;
+}
+
+.interest h1{
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 2.5%;
+    color:white;
+    z-index: 1;
+}
+/*---------------------------------------------- PERFIL ------------------------------------------------------*/
+
+#profile-module h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    color: #ffffff;
+}
+#profile-module h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: #181818;
+}
+#profile-module h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    color: #1d1d1d;
+}
+#profile-module p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    color: #353535;
+}
+
+#profile-module{
+    position: absolute;
+    width: 100%;
+    top: 760px;
+    left: 0;
+    height: 730px;
+   
+}
+
+#profile-module-banner{
+    position: absolute;
+    height: 50%;
+    margin: 0px auto;
+    width: 100%;
+    background: url(../images/profile/profile_banner4.jpg ) center no-repeat;
+      
+    z-index: 0;
+}
+
+#profile-module-tittle{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin-top: 100px;
+    margin-left: 10px;
+    
+}
+
+#profile-module-picture{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #87DEDE;
+    background: url(../images/profile/profile_image2.jpeg);
+    margin: 13% 76% 0px;
+    z-index: 1;
+
+}
+#profile-info-area{
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+    z-index: 0;
+
+}
+#about-me{
+    position: relative;
+    height: 100%;
+    width: 60%;
+    display: inline-block;
+    background-color: #b9b9b9a4;
+    border-radius: 5px;
+    margin: 0 auto ;
+    margin-right: 40px;
+}
+
+#personal-info{
+    position: relative;
+    height: 100%;
+    width: 27%;
+    margin-left: 40px;
+    display: inline-block;
+    background-color: rgb(97, 170, 147);
+    border-radius: 5px;
+    border: #262626;
+   
+    
+}
+.profile-text{
+    position: absolute;
+    height: 85%;
+    width: 88%;
+    margin: 20px 50px;
+    z-index: 1;
+    
+}
+
+/*---------------------------------------------- TRABAJOS ------------------------------------------------------*/
+
+#works_module img{
+    width: 130%;
+    transition: all 0.5s;
+}
+#works_module{
+    position: absolute;
+    top: 1490px;
+    left: 0;
+    height: 730px;
+    width: 100%;
+}
+
+#works-module-banner{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    margin: 0 auto;
+
+}
+#works-module-banner h1{
+    color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+#works-module-content{
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    background-color: #87DEDE;
+    width: 100%;
+    height:80%;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 0;
+}
+
+.work-item-wrapper{
+    position: relative;
+    width: 25%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: aliceblue;
+    padding: 0;
+    z-index: 1;
+}
+
+
+.work-tittle{
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 50px;
+    background-color: #1d1d1d9d;
+    float: left;
+    text-align: left;
+    margin-top: 20%;
+    z-index: 10;
+}
+
+.t2{
+    margin-top: 42%;
+    float: left;
+    text-align: left;
+    
+}
+.t3{
+    margin-top: 42%;
+    float: right;
+    text-align: right;
+}
+
+.t4{
+    margin-top: 20%;
+    float: right;
+    text-align: right;
+}
+
+.work-tittle h2{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 15px;
+}
+
+.work-item-wrapper:hover .works_image{
+    transform: scale(1.25);
+}
+
+/*---------------------------------------------- PROYECTOS  ------------------------------------------------------*/
+
+#projects-module img{
+    width: 100%;
+    height: 100%;
+
+}
+
+#projects-module{
+    position: absolute;
+    top: 2200px;
+    left: 0;
+    width: 100%;
+}
+
+.projects-module-tittle{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #0090a3;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.projects-module-tittle #projects-tittle, #projects-tittle-desctiption{
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+.projects-module-tittle h1{
+    font-size: 50px;
+
+}
+.projects-module-tittle p{
+    font-size: 20px;
+    
+}
+
+.projects-item-wrapper{
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 300px;
+
+}
+.projects-item-image-wrapper{
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 30%;
+    height: 100%;
+    border-top: 2px solid #afafaf;
+}
+.projects-item-content{
+    position: relative;
+    float: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 70%;
+    height: 100%;
+    border-top: 2px solid #afafaf;
+}
+
+
+
+.projects-item-tittle{
+    position: relative;
+    width: 45%;
+    top: 0;
+    height: 50px;
+    float: left;
+    text-align: left;
+    background-color: #0090a3bd;
+    margin-top: 5%;
+    z-index: 1;
+}
+
+.project-tittle-2{
+    float: right;
+    text-align: right;
+}
+.projects-item-tittle h2{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 15px;
+}
+.projects-item-content-description{
+    position: relative;
+    width: 90%;
+    height: 60%;
+    margin-top: 0;
+    margin-left: 30px;
+    top: 0;
+    float: left;
+    text-align: left;
+    z-index: 1;
+}
+.project-desccription-2{
+    float: right;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.projects-item-content-description p{
+   color: #2b2b2b;
+   font-size: 20px;
+   padding: 15px;
+   
+
+}
+
+.projects-image-2{
+    float: right;
+   
+}
+.projects-content-2{
+    float: left;
+   
+}
+
+
+
+
+
+
